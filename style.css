@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
 h1,
 h2,
 h3,
@@ -73,7 +74,8 @@ a:hover {
     border-radius: 20px;
     height: 46rem;
 }
-#slider span{ 
+
+#slider span {
     -webkit-text-stroke: 1.2px rgb(148, 182, 237);
     letter-spacing: 4px;
     color: transparent;
@@ -124,9 +126,11 @@ a:hover {
 .last p {
     border-left: none !important;
 }
-.other-Home_hero{
+
+.other-Home_hero {
     display: none;
 }
+
 /* .feedback {
     background: linear-gradient(to right, rgb(51, 65, 85) 50%, rgb(224, 142, 42) 50%);
     background-size: 200%;
@@ -207,7 +211,8 @@ footer a {
 }
 
 .content-section {
-    margin: 70px;
+    margin: 60px 10px 10px 10px;
+
 }
 
 .content {
@@ -225,7 +230,6 @@ footer a {
 }
 
 .layout-content a {
-
     text-decoration: none;
     color: rgb(36, 43, 54);
     font-size: large;
@@ -271,18 +275,20 @@ footer a {
     color: transparent;
 
 }
-.info_about{
+
+.info_about {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.info_ar p{
+
+.info_ar p {
     width: 40rem;
     letter-spacing: 2px;
     font-family: 'Italiana', sans-serif;
     font-weight: 900;
- 
+
 }
 
 .img_section {
@@ -293,14 +299,13 @@ footer a {
 
 .layout_img {
     width: 100%;
-    /* margin-bottom: 80px; */
     display: flex;
-    /* gap: 16px; */
 }
 
-.first_section{
+.first_section {
     margin-bottom: 40px;
 }
+
 .img {
     background-image: url("./images/Architecture/Architecture_one.jpeg");
     background-size: cover;
@@ -402,11 +407,12 @@ footer a {
     margin-bottom: 70px;
 
 }
-.first_section{
-margin-top: 10rem;
+
+.first_section {
+    margin-top: 10rem;
 }
 
-.img3{
+.img3 {
     background-image: url("./images/Architecture/Architecture_three.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -421,10 +427,11 @@ margin-top: 10rem;
     transition: 2s;
     border-radius: 10% 0% 10% 0%;
 }
-.img3:hover{
+
+.img3:hover {
     scale: 0.99999;
     border-radius: 0% 10% 0% 10%;
-    
+
 }
 
 .img4 {
@@ -434,10 +441,114 @@ margin-top: 10rem;
     margin-left: 8%;
     animation: leftToRight 0.8s;
 }
-.Footer{
+
+.Footer {
     margin-top: 60px;
 }
 
+.third_section {
+    margin-top: 60px;
+    animation: leftToRight 1s;
+}
+
+.img5 {
+    margin-top: 10vw;
+    height: 27.7vw;
+    width: 40vw;
+    transition: 1.4s;
+    margin-left: 8%;
+}
+
+.img6 {
+    background-image: url("./images/Architecture/Architecture_five.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 26vw;
+    transition: 1.4s;
+    margin-left: 2%;
+    scale: 1;
+    transition: 2s;
+    border-radius: 10%;
+    animation: leftToRight 0.9s;
+}
+
+.img6 h2 {
+    transform: rotate(90deg);
+    position: absolute;
+    font-size: 40px;
+    right: -42%;
+    bottom: 180px;
+    font-family: 'Italiana', sans-serif;
+}
+
+.img7 {
+    background-image: url("./images/Architecture/Architecture_six.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 26vw;
+    display: block;
+    transition: 1.4s;
+    margin-left: 1%;
+}
+
+/* Interiors  */
+
+.layout_Interiors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    animation: leftToRight 0.9s;
+}
+
+.grow1 {
+
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    background-size: 200%;
+    background-position: left;
+    transition: 1.3s;
+    padding: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+    border: 1px solid rgba(255, 255, 255, 0.81);
+}
+
+.grow1:hover {
+    background-position: right;
+    background:  #d4acefbe ;
+}
+.grow1 img {
+    height: 26vw;
+    scale: 0.9;
+    width: 30vw;
+    transition: 1.4s;
+    border-radius: 10%;
+}
+.grow1 img:hover {
+    scale: 1;
+}
+
+.Interiors_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-right:40px;
+}
+
+.About_interiors{
+    width: 60%;
+   
+}
+.About_interiors-img img{
+  height: 34vw;
+  border-radius: 10%;
+  margin-top: 20px;
+
+}
 @media only screen and (max-width: 600px) {
     nav {
         width: 70%;
@@ -472,18 +583,19 @@ margin-top: 10rem;
     #our-work img:hover {
         scale: none;
     }
-  
-    .other-Home_hero{
+
+    .other-Home_hero {
         display: contents;
         justify-content: center;
         text-align: center;
     }
+
     #line>h3 {
         width: 300px;
     }
 
     .info_ar h1 {
-        padding-top: 30%;
+        padding-top: 20%;
         font-size: 40px;
     }
 
@@ -511,4 +623,50 @@ margin-top: 10rem;
         text-align: center;
 
     }
+
+    .img3 {
+        height: 44vw;
+        width: 40vw;
+    }
+
+    .img4 h4 {
+        width: 90%;
+        font-size: medium;
+    }
+
+    .third_section {
+        margin-bottom: 20px;
+    }
+
+    .img5 {
+        margin-top: 0px;
+    }
+
+    .img5 h3 {
+        font-size: medium;
+
+    }
+
+    .img6 {
+        height: 50vw;
+        /* width: 36vw; */
+    }
+
+    .img6 h2 {
+        display: none;
+    }
+
+    .img7 {
+        height: 40vw;
+        width: 46vw;
+
+    }
+
+    .layout_Interiors {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }

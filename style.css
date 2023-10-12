@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 h1,
 h2,
 h3,
@@ -258,6 +259,7 @@ footer a {
 
 .info_ar>h1 {
     font-size: 90px;
+    font-family: 'Italiana', sans-serif;
 }
 
 .info_ar>h1>span {

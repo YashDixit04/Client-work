@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
 h1,
 h2,
 h3,
@@ -7,6 +19,7 @@ h4,
 h5,
 h6 {
     font-weight: bold;
+    font-family: 'Italiana', sans-serif;
 }
 
 nav {
@@ -131,29 +144,13 @@ a:hover {
     display: none;
 }
 
-/* .feedback {
-    background: linear-gradient(to right, rgb(51, 65, 85) 50%, rgb(224, 142, 42) 50%);
-    background-size: 200%;
-    background-position: left;
-    transition: 1s;
-    padding: 20px;
-    color: white;
-}
-
-.feedback:hover {
-    background-position: right;
-}
-
-.feedback img {
-    height: 40px;
-    border-radius: 50%;
-} */
-
 footer {
     background-color: rgb(36, 43, 54);
     color: white;
-    padding: 20px 40px;
+    padding: 40px 40px;
+    margin-top: 60px;
     height: 70px;
+    text-align: center;
 }
 
 footer h6 {
@@ -442,10 +439,6 @@ footer a {
     animation: leftToRight 0.8s;
 }
 
-.Footer {
-    margin-top: 60px;
-}
-
 .third_section {
     margin-top: 60px;
     animation: leftToRight 1s;
@@ -499,6 +492,7 @@ footer a {
     justify-content: space-evenly;
     align-self: center;
     animation: leftToRight 0.9s;
+    margin-top: 40px;
 }
 
 .grow1 {
@@ -511,14 +505,15 @@ footer a {
     padding: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.2px);
-    -webkit-backdrop-filter: blur(2.2px);
+    justify-content: space-evenly;
     border: 1px solid rgba(255, 255, 255, 0.81);
 }
 
 .grow1:hover {
     background-position: right;
-    background:  #d4acefbe ;
+    background: #d4acefbe;
 }
+
 .grow1 img {
     height: 26vw;
     scale: 0.9;
@@ -526,29 +521,31 @@ footer a {
     transition: 1.4s;
     border-radius: 10%;
 }
+
 .grow1 img:hover {
     scale: 1;
 }
 
-.Interiors_info{
+.Interiors_info {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 20px;
-    margin-right:40px;
+    margin-right: 40px;
 }
 
-.About_interiors{
+.About_interiors {
     width: 60%;
-   
 }
-.About_interiors-img img{
-  height: 34vw;
-  border-radius: 10%;
-  margin-top: 20px;
+
+.About_interiors-img img {
+    height: 34vw;
+    border-radius: 10%;
+    margin-top: 20px;
 
 }
+
 @media only screen and (max-width: 600px) {
     nav {
         width: 70%;
@@ -662,11 +659,28 @@ footer a {
 
     }
 
+    .About_interiors {
+        width: 90%;
+    }
+
+    .About_interiors-img img {
+        height: 49vw;
+        border-radius: 10%;
+        margin-top: 20px;
+        width: 100%;
+    }
+
     .layout_Interiors {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
+
+    .Interiors_info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

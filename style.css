@@ -469,7 +469,7 @@ footer a {
     transform: rotate(90deg);
     position: absolute;
     font-size: 40px;
-    right: -42%;
+    right: -35%;
     bottom: 180px;
     font-family: 'Italiana', sans-serif;
 }
@@ -485,46 +485,6 @@ footer a {
 }
 
 /* Interiors  */
-
-.layout_Interiors {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-self: center;
-    animation: leftToRight 0.9s;
-    margin-top: 40px;
-}
-
-.grow1 {
-
-    background: rgba(255, 255, 255, 0.26);
-    border-radius: 16px;
-    background-size: 200%;
-    background-position: left;
-    transition: 1.3s;
-    padding: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.2px);
-    justify-content: space-evenly;
-    border: 1px solid rgba(255, 255, 255, 0.81);
-}
-
-.grow1:hover {
-    background-position: right;
-    background: #d4acefbe;
-}
-
-.grow1 img {
-    height: 26vw;
-    scale: 0.9;
-    width: 30vw;
-    transition: 1.4s;
-    border-radius: 10%;
-}
-
-.grow1 img:hover {
-    scale: 1;
-}
 
 .Interiors_info {
     display: flex;
@@ -545,6 +505,106 @@ footer a {
     margin-top: 20px;
 
 }
+
+.Interior_card {
+    display: flex;
+    margin: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 424px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgb(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 30px 50px;
+
+    background-color: #f1f1f1;
+}
+
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-60px);
+    border-radius: 4px;
+}
+
+.imgbox img {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    transition: 1s;
+}
+
+.imgbox_two img {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.imgbox img:hover {
+    scale: 1.1;
+}
+
+.Interior-data {
+    display: block;
+    text-align: center;
+    animation: leftToRight 0.6s;
+}
+
+.interior_hover {
+    width: 400px;
+    height: 430px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 30px;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s;
+    opacity: 1;
+}
+.interior_hover:hover{
+    opacity: 0.9;
+}
+.interior_hover h4{
+   opacity: 0;
+   transition: all 1s;
+   animation: leftToRight 0.9s;
+}
+.interior_hover:hover h4{
+    opacity: 1;
+}
+
+.card1 {
+    background-image: url("./images/Interiors/Interiors_six.png");
+}
+
+.card2 {
+    background-image: url("./images/Interiors/Interiors_seven.png");
+}
+
+.card3 {
+    background-image: url("./images/Interiors/Interiors_eight.png");
+}
+
+.card4 {
+
+    background-image: url("./images/Interiors/Interiors_nine.png");
+}
+
+.card5 {
+    background-image: url("./images/Interiors/Interiors_eleven.png");
+}
+
+.interior_hover:hover {
+    transform: translateY(-14px);
+}
+
 
 @media only screen and (max-width: 600px) {
     nav {
@@ -670,17 +730,15 @@ footer a {
         width: 100%;
     }
 
-    .layout_Interiors {
-        display: none;
+    .Interiors_info {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .Interiors_info {
+    .Interior_card {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
 }

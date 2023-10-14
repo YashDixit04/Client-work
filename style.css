@@ -191,6 +191,28 @@ footer a {
     padding-bottom: 20px;
 }
 
+.our_work-section_btn {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.our_work-section_btn button {
+    background-color: rgba(70, 70, 227, 0.897);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 1.4s;
+}
+.our_work-section_btn button:hover {
+    background-color: rgba(34, 34, 219, 0.897);
+    
+}
+
+
 .our_work {
     text-align: center;
 
@@ -562,21 +584,24 @@ footer a {
     padding: 14px 24px;
     box-sizing: border-box;
     cursor: pointer;
-    margin: 30px;
+    margin: 14px;
     background-position: center;
     background-size: cover;
     transition: all 1s;
     opacity: 1;
 }
-.interior_hover:hover{
+
+.interior_hover:hover {
     opacity: 0.9;
 }
-.interior_hover h4{
-   opacity: 0;
-   transition: all 1s;
-   animation: leftToRight 0.9s;
+
+.interior_hover h4 {
+    opacity: 0;
+    transition: all 1s;
+    animation: leftToRight 0.9s;
 }
-.interior_hover:hover h4{
+
+.interior_hover:hover h4 {
     opacity: 1;
 }
 

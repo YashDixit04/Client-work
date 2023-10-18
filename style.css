@@ -207,9 +207,10 @@ footer a {
     padding: 10px;
     transition: 1.4s;
 }
+
 .our_work-section_btn button:hover {
     background-color: rgba(34, 34, 219, 0.897);
-    
+
 }
 
 
@@ -230,7 +231,7 @@ footer a {
 }
 
 .content-section {
-    margin: 60px 10px 10px 10px;
+    margin: 16px 10px 10px 10px;
 
 }
 
@@ -442,13 +443,12 @@ footer a {
     display: block;
     transition: 1.4s;
     margin-left: 8%;
-    scale: 1.2;
     transition: 2s;
+    scale: 1;
     border-radius: 10% 0% 10% 0%;
 }
 
 .img3:hover {
-    scale: 0.99999;
     border-radius: 0% 10% 0% 10%;
 
 }
@@ -491,8 +491,9 @@ footer a {
     transform: rotate(90deg);
     position: absolute;
     font-size: 40px;
-    right: -35%;
-    bottom: 180px;
+    right: -60%;
+    letter-spacing: 12px;
+    bottom: 240px;
     font-family: 'Italiana', sans-serif;
 }
 
@@ -543,7 +544,6 @@ footer a {
     box-shadow: 0px 4px 20px rgb(0, 0, 0, 0.5);
     transition: 0.3s;
     padding: 30px 50px;
-
     background-color: #f1f1f1;
 }
 
@@ -626,6 +626,16 @@ footer a {
     transform: translateY(-14px);
 }
 
+.choose {
+    margin: 4rem;
+    text-align: center;
+}
+
+.choose p {
+    font-size: large;
+    word-spacing: 14px;
+    margin-top: 2rem;
+}
 
 @media only screen and (max-width: 600px) {
     nav {

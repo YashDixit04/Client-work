@@ -13,20 +13,22 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
 ::-webkit-scrollbar {
     width: 0.625rem;
-  }
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.889);
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: rgba(154, 153, 153, 0.587);
     border-radius: 40px;
-  }
+}
+
 h1,
 h2,
-h3,
 h5,
 h6 {
     font-weight: bold;
@@ -80,7 +82,7 @@ a:hover {
 }
 
 .dropdown-content a {
-    color: #8578db;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -130,6 +132,7 @@ a:hover {
     width: 400px;
     display: inline-block;
     vertical-align: middle;
+    color: black;
     margin-left: 50px;
 }
 
@@ -139,7 +142,7 @@ a:hover {
 }
 
 .round-number h5 span {
-    color: #7fb597;
+    color: #ffffff;
     background-color: rgb(51, 65, 85);
     padding: 10px 12px;
     border-radius: 50%;
@@ -189,6 +192,7 @@ footer a {
     bottom: 20px;
     right: 20px;
     color: rgb(237, 199, 9);
+    cursor: pointer;
 }
 
 .layout {
@@ -205,7 +209,7 @@ footer a {
 }
 
 .our_work-section {
-    background: linear-gradient(to right, #373B44,#4286f4);
+    background-image: radial-gradient(#3153a1, #556589, #3d424d);
     backdrop-filter: blur(5px);
     padding-bottom: 20px;
 }
@@ -314,6 +318,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 24.3vh;
     text-align: center;
 }
 
@@ -336,10 +341,6 @@ footer a {
     display: flex;
 }
 
-.first_section {
-    margin-bottom: 40px;
-}
-
 .img {
     background-image: url("./images/Architecture/Architecture_one.jpeg");
     background-size: cover;
@@ -355,27 +356,28 @@ footer a {
     scale: 1.2;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.img3-info {
+    height: 20rem;
+    width: 40rem;
+    transition: 1.4s;
+    margin-left: 8%;
+    animation: leftToRight 0.8s;
+}
+
+
 .img h1 {
     text-align: center;
     margin-top: 20px;
     opacity: 0;
     transition: 1.2s;
     color: #272525;
-}
-
-.img:hover {
-    opacity: 0.9;
-}
-
-.img:hover h1 {
-    opacity: 1;
-    animation: downToUp 0.8s;
-    background: rgba(255, 255, 255, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.2px);
-    -webkit-backdrop-filter: blur(2.2px);
-    border: 1px solid rgba(255, 255, 255, 0.81);
 }
 
 .img2 {
@@ -421,27 +423,6 @@ footer a {
 
 }
 
-.img2:hover {
-    opacity: 0.9;
-}
-
-.img2:hover h3 {
-    opacity: 1;
-    animation: leftToRight 0.8s;
-    background: rgba(255, 255, 255, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.2px);
-    -webkit-backdrop-filter: blur(2.2px);
-    border: 1px solid rgba(255, 255, 255, 0.81);
-}
-
-.Details_info {
-    display: none;
-    margin-bottom: 70px;
-
-}
-
 .first_section {
     margin-top: 10rem;
 }
@@ -456,7 +437,6 @@ footer a {
     width: 34vw;
     display: block;
     transition: 1.4s;
-    margin-left: 8%;
     transition: 2s;
     scale: 1;
     border-radius: 10% 0% 10% 0%;
@@ -464,28 +444,11 @@ footer a {
 
 .img3:hover {
     border-radius: 0% 10% 0% 10%;
-
-}
-
-.img4 {
-    height: 27.7vw;
-    width: 34vw;
-    transition: 1.4s;
-    margin-left: 8%;
-    animation: leftToRight 0.8s;
 }
 
 .third_section {
     margin-top: 60px;
     animation: leftToRight 1s;
-}
-
-.img5 {
-    margin-top: 10vw;
-    height: 27.7vw;
-    width: 40vw;
-    transition: 1.4s;
-    margin-left: 8%;
 }
 
 .img6 {
@@ -497,7 +460,7 @@ footer a {
     margin-left: 2%;
     scale: 1;
     transition: 2s;
-    border-radius: 10%;
+    border-radius: 10px 10px 10px 10px;
     animation: leftToRight 0.9s;
 }
 
@@ -519,7 +482,24 @@ footer a {
     width: 26vw;
     display: block;
     transition: 1.4s;
+    animation: leftToRight 0.9s;
     margin-left: 1%;
+}
+
+.last-img {
+    display: flex;
+    flex-direction: row;
+    height: 38rem;
+}
+
+.last_section {
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+}
+
+.last-info {
+    height: 20rem;
 }
 
 /* Interiors  */
@@ -599,20 +579,6 @@ footer a {
     background-position: center;
     background-size: cover;
     transition: all 1s;
-    opacity: 1;
-}
-
-.interior_hover:hover {
-    opacity: 0.9;
-}
-
-.interior_hover h4 {
-    opacity: 0;
-    transition: all 1s;
-    animation: leftToRight 0.9s;
-}
-
-.interior_hover:hover h4 {
     opacity: 1;
 }
 
@@ -721,38 +687,48 @@ footer a {
         font-size: 10px;
     }
 
-    .Details_info {
-        display: contents;
-        text-align: center;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        flex-direction: column;
+    }
 
+    .img3-info {
+        height: 18rem;
+        width: 23rem;
+        transition: 1.4s;
+        margin-left: 0%;
+        padding-top: 10%;
+        animation: leftToRight 0.8s;
+    }
+
+    .img3-info h4 {
+        font-size: 1.2rem;
     }
 
     .img3 {
-        height: 44vw;
-        width: 40vw;
-    }
-
-    .img4 h4 {
-        width: 90%;
-        font-size: medium;
-    }
-
-    .third_section {
-        margin-bottom: 20px;
+        height: 14rem;
+        width: 14rem;
     }
 
     .img5 {
         margin-top: 0px;
     }
 
-    .img5 h3 {
-        font-size: medium;
-
-    }
-
     .img6 {
         height: 50vw;
-        /* width: 36vw; */
+        width: 26rem;
+        margin-left: 0%;
+        background-size: contain;
+        transition: 1.4s;
+        margin-left: 2%;
+        scale: 1;
+        transition: 2s;
+        border-radius: 10px 10px 10px 10px;
+        animation: leftToRight 0.9s;
+
     }
 
     .img6 h2 {
@@ -760,11 +736,28 @@ footer a {
     }
 
     .img7 {
-        height: 40vw;
+        height: 44vw;
+        margin-top: 20px;
         width: 46vw;
-
     }
 
+    .last-img {
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        margin: 2rem;
+    }
+    
+    .last_section {
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+    
+    .last-info {
+        height: 0rem;
+    }
+    
     .About_interiors {
         width: 90%;
     }

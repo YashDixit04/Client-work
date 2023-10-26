@@ -356,7 +356,7 @@ footer a {
     scale: 1.2;
 }
 
-.container {
+.container-zero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -515,6 +515,11 @@ footer a {
 
 .About_interiors {
     width: 60%;
+}
+.About_interiors h4{
+    width: 30rem;
+   text-align: left;
+   margin-left: 4rem;
 }
 
 .About_interiors-img img {
@@ -687,7 +692,7 @@ footer a {
         font-size: 10px;
     }
 
-    .container {
+    .container-zero{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -761,7 +766,12 @@ footer a {
     .About_interiors {
         width: 90%;
     }
-
+    
+    .About_interiors h4{
+        width: 22rem;
+       text-align: left;
+       margin-left: 0rem;
+    }
     .About_interiors-img img {
         height: 49vw;
         border-radius: 10%;
@@ -779,5 +789,11 @@ footer a {
         display: flex;
         flex-direction: column;
     }
-
+    .card{
+        margin-top: 40px
+    }
+    .interior_hover {
+        width: 340px;
+        
+    }
 }

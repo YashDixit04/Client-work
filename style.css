@@ -50,7 +50,7 @@ nav {
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
     border: 1px solid rgba(255, 255, 255, 0.81);
-
+    padding: 0px !important;
     position: fixed !important;
     z-index: 2;
     width: 98%;
@@ -60,6 +60,11 @@ nav a {
     color: black;
     font-weight: 900;
     font-size: 20px;
+}
+
+nav a>img {
+    height: 80px;
+    width: 90px;
 }
 
 a:hover {
@@ -516,10 +521,11 @@ footer a {
 .About_interiors {
     width: 60%;
 }
-.About_interiors h4{
+
+.About_interiors h4 {
     width: 30rem;
-   text-align: left;
-   margin-left: 4rem;
+    text-align: left;
+    margin-left: 4rem;
 }
 
 .About_interiors-img img {
@@ -692,7 +698,7 @@ footer a {
         font-size: 10px;
     }
 
-    .container-zero{
+    .container-zero {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -752,26 +758,27 @@ footer a {
         height: 30rem;
         margin: 2rem;
     }
-    
+
     .last_section {
         justify-content: center;
         align-items: center;
         margin: 2rem;
     }
-    
+
     .last-info {
         height: 0rem;
     }
-    
+
     .About_interiors {
         width: 90%;
     }
-    
-    .About_interiors h4{
+
+    .About_interiors h4 {
         width: 22rem;
-       text-align: left;
-       margin-left: 0rem;
+        text-align: left;
+        margin-left: 0rem;
     }
+
     .About_interiors-img img {
         height: 49vw;
         border-radius: 10%;
@@ -789,11 +796,13 @@ footer a {
         display: flex;
         flex-direction: column;
     }
-    .card{
+
+    .card {
         margin-top: 40px
     }
+
     .interior_hover {
         width: 340px;
-        
+
     }
 }

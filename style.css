@@ -50,7 +50,7 @@ nav {
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
     border: 1px solid rgba(255, 255, 255, 0.81);
-    padding: 0px !important;
+    padding: 0px 0px 0px 0px!important;
     position: fixed !important;
     z-index: 2;
     width: 98%;
@@ -59,21 +59,25 @@ nav {
 nav a {
     color: black;
     font-weight: 900;
+     padding: 0px 0px 0px 0px !important;
     font-size: 20px;
+}
+.dropdown-content{
+    padding: 14px !important;
 }
 
 nav a>img {
-    height: 80px;
-    width: 90px;
+    height: 6rem;
+    padding-left: 40px;
 }
 
 a:hover {
     text-decoration: none;
+    color: black ;
 }
 
 .navbar-brand {
     font-weight: bold;
-    color: #8578db;
 }
 
 .dropdown-content {
@@ -637,7 +641,10 @@ footer a {
     nav span {
         display: none;
     }
-
+    nav a>img {
+        height: 4.9rem;
+        padding-left: 20px;
+    }
     #slider {
         height: 26rem;
     }

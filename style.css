@@ -50,7 +50,7 @@ nav {
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
     border: 1px solid rgba(255, 255, 255, 0.81);
-    padding: 0px 0px 0px 0px!important;
+    padding: 0px 0px 0px 0px !important;
     position: fixed !important;
     z-index: 2;
     width: 98%;
@@ -59,10 +59,11 @@ nav {
 nav a {
     color: black;
     font-weight: 900;
-     padding: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
     font-size: 20px;
 }
-.dropdown-content{
+
+.dropdown-content {
     padding: 14px !important;
 }
 
@@ -73,7 +74,7 @@ nav a>img {
 
 a:hover {
     text-decoration: none;
-    color: black ;
+    color: black;
 }
 
 .navbar-brand {
@@ -320,87 +321,6 @@ footer a {
 .info_ar span {
     -webkit-text-stroke: 1.2px rgb(36, 43, 54);
     color: transparent;
-
-}
-
-.info_about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 24.3vh;
-    text-align: center;
-}
-
-.info_ar p {
-    width: 40rem;
-    letter-spacing: 2px;
-    font-family: 'Italiana', sans-serif;
-    font-weight: 900;
-
-}
-
-.img_section {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.layout_img {
-    width: 100%;
-    display: flex;
-}
-
-.img {
-    background-image: url("./images/Architecture/Architecture_one.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 27.7vw;
-    width: 34vw;
-    /* display: block; */
-    border-radius: 10% 0% 10% 0%;
-    transition: 1.4s;
-    margin-left: 8%;
-    scale: 1.2;
-}
-
-.container-zero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.img3-info {
-    height: 20rem;
-    width: 40rem;
-    transition: 1.4s;
-    margin-left: 8%;
-    animation: leftToRight 0.8s;
-}
-
-
-.img h1 {
-    text-align: center;
-    margin-top: 20px;
-    opacity: 0;
-    transition: 1.2s;
-    color: #272525;
-}
-
-.img2 {
-    background-image: url("./images/Architecture/Architecture_two.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 27.7vw;
-    width: 34vw;
-    display: block;
-    transition: 1.4s;
-    margin-left: 8%;
-    animation: leftToRight 0.8s;
-    border-radius: 4%;
 }
 
 @keyframes leftToRight {
@@ -415,100 +335,54 @@ footer a {
     }
 }
 
-.img2 h3 {
-    opacity: 0;
-    transition: 1.2s;
-    color: #000000;
-    padding: 20px !important;
-    margin: 20px !important;
-    text-align: center;
+
+
+.page{
+    height: 50vh;
 }
-
-.img2 span {
-    font-size: 30px;
-    padding-left: 10px;
-    -webkit-text-stroke: 1.2px rgb(36, 43, 54);
-    color: transparent;
-
-}
-
-.first_section {
-    margin-top: 10rem;
-}
-
-.img3 {
-    background-image: url("./images/Architecture/Architecture_three.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 27.7vw;
-    width: 34vw;
-    display: block;
-    transition: 1.4s;
-    transition: 2s;
-    scale: 1;
-    border-radius: 10% 0% 10% 0%;
-}
-
-.img3:hover {
-    border-radius: 0% 10% 0% 10%;
-}
-
-.third_section {
-    margin-top: 60px;
-    animation: leftToRight 1s;
-}
-
-.img6 {
-    background-image: url("./images/Architecture/Architecture_five.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 26vw;
-    transition: 1.4s;
-    margin-left: 2%;
-    scale: 1;
-    transition: 2s;
-    border-radius: 10px 10px 10px 10px;
-    animation: leftToRight 0.9s;
-}
-
-.img6 h2 {
-    transform: rotate(90deg);
+.loop{
     position: absolute;
-    font-size: 40px;
-    color: #9cc89f;
-    right: -60%;
-    letter-spacing: 12px;
-    bottom: 240px;
-    font-family: 'Italiana', sans-serif;
-}
-
-.img7 {
-    background-image: url("./images/Architecture/Architecture_six.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 26vw;
-    display: block;
-    transition: 1.4s;
-    animation: leftToRight 0.9s;
-    margin-left: 1%;
-}
-
-.last-img {
+    top: 30%;
+    height: 60%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    height: 38rem;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+.loop>img{
+    height: 90%;
+    margin: 6px;
+    animation: anim 24s linear infinite;
 }
 
-.last_section {
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.loop-info{
     justify-content: center;
+    text-align: start;
+    margin: 60px;
+    animation: downToUp 0.8s;
     align-items: center;
-    margin: 10rem;
 }
-
-.last-info {
-    height: 20rem;
+.loop-info>h4{
+    width: 90%;
+    animation: downToUp 0.8s;
+}
+.provide{
+    justify-content: center;
+    align-self: center;
+    margin-left: 30rem;
+}
+.provide-services>h3{
+    padding-left: 60px
 }
 
 /* Interiors  */
@@ -633,24 +507,82 @@ footer a {
     margin-top: 2rem;
 }
 
+
+
+.imgbox_one img{
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+    height: 14rem;
+}
+/* ABOUT  */
+.info_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24.3vh;
+    text-align: center;
+}
+
+.info_ar p {
+    width: 40rem;
+    letter-spacing: 2px;
+    font-family: 'Italiana', sans-serif;
+    font-weight: 900;
+
+}
+.our_team {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.company {
+    background: linear-gradient(to right, rgba(200, 203, 206, 0.776) 50%, rgba(255, 255, 255, 0.2) 50%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-position: left;
+    transition: 1s;
+    padding: 4vw;
+    background-size: 200%;
+}
+
+.company:hover {
+    background-position: right;
+}
+.company h2{
+    text-shadow: 1px 1px 1px currentColor;
+}
+
 @media only screen and (max-width: 600px) {
     nav {
-        width: 70%;
+        width: 22rem;
     }
 
     nav span {
         display: none;
     }
+
     nav a>img {
         height: 4.9rem;
         padding-left: 20px;
     }
+
     #slider {
-        height: 26rem;
+        height: 38rem;
     }
 
     #slider img {
-        height: 26rem;
+        height: 38rem;
     }
 
     .layout img {
@@ -674,7 +606,7 @@ footer a {
     .other-Home_hero {
         display: contents;
         justify-content: center;
-        text-align: center;
+        text-align: center;   
     }
 
     #line>h3 {
@@ -685,25 +617,14 @@ footer a {
         padding-top: 20%;
         font-size: 40px;
     }
-
+    .page{
+        height: 38vh;
+    }
     .info_ar>h1>span {
         font-size: 40px;
     }
 
-    .img {
-        height: 49vw;
-        width: 40vw;
-    }
-
-    .img2 {
-        height: 52vw;
-        width: 42vw;
-        margin-bottom: 20px;
-    }
-
-    .img2 span {
-        font-size: 10px;
-    }
+    
 
     .container-zero {
         display: flex;
@@ -712,68 +633,32 @@ footer a {
         text-align: start;
         flex-direction: column;
     }
-
-    .img3-info {
-        height: 18rem;
-        width: 23rem;
-        transition: 1.4s;
-        margin-left: 0%;
-        padding-top: 10%;
-        animation: leftToRight 0.8s;
-    }
-
-    .img3-info h4 {
-        font-size: 1.2rem;
-    }
-
-    .img3 {
-        height: 14rem;
-        width: 14rem;
-    }
-
-    .img5 {
-        margin-top: 0px;
-    }
-
-    .img6 {
-        height: 50vw;
-        width: 26rem;
-        margin-left: 0%;
-        background-size: contain;
-        transition: 1.4s;
-        margin-left: 2%;
-        scale: 1;
-        transition: 2s;
-        border-radius: 10px 10px 10px 10px;
-        animation: leftToRight 0.9s;
-
-    }
-
-    .img6 h2 {
-        display: none;
-    }
-
-    .img7 {
-        height: 44vw;
-        margin-top: 20px;
-        width: 46vw;
-    }
-
-    .last-img {
+    .loop{
+        position: absolute;
+        top: 24%;
+        height: 40%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        height: 30rem;
-        margin: 2rem;
+        white-space: nowrap;
+        overflow-x: hidden;
     }
-
-    .last_section {
-        justify-content: center;
+    .loop-info{
+        margin-left: 30px;
+        width: 80%;
+        text-align: start;
         align-items: center;
-        margin: 2rem;
     }
-
-    .last-info {
-        height: 0rem;
+    .loop-info>h4{
+        width: 100%;
+    }
+   
+    .provide{
+        justify-content: center;
+        align-self: center;
+        margin-left: 2rem;
+    }
+    .provide-services>h3{
+        padding-left: 10px
     }
 
     .About_interiors {
@@ -811,5 +696,18 @@ footer a {
     .interior_hover {
         width: 340px;
 
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .company {
+        margin: 10px;
+        padding: 4vh;
+    }
+
+    .Co-director>h2 {
+        width: 30vh;
     }
 }

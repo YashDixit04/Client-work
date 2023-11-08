@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0px;
+    background: #f2f9ff;
     padding: 0px;
 }
 
@@ -219,7 +220,6 @@ footer a {
 }
 
 .our_work-section {
-    background-image: radial-gradient(#3153a1, #556589, #3d424d);
     backdrop-filter: blur(5px);
     padding-bottom: 20px;
 }
@@ -233,9 +233,9 @@ footer a {
 }
 
 .our_work-section_btn button {
-    background: paleturquoise;
+    background: #5f5284;
     border: none;
-    color: black;
+    color: white;
     border-radius: 10px;
     padding: 10px;
     transition: 1s ease-in-out;
@@ -248,7 +248,7 @@ footer a {
 }
 
 .our_work h1 {
-    color: #f1f1f1;
+    color: #3C315B;
     margin: 20px;
     z-index: 2;
 
@@ -312,10 +312,12 @@ footer a {
 .info_ar>h1 {
     font-size: 90px;
     font-family: 'Italiana', sans-serif;
+    color: #3C315B;
 }
 
 .info_ar>h1>span {
     font-size: 90px;
+    color: #3C315B;
 }
 
 .info_ar span {
@@ -335,12 +337,11 @@ footer a {
     }
 }
 
-
-
-.page{
+.page {
     height: 50vh;
 }
-.loop{
+
+.loop {
     position: absolute;
     top: 30%;
     height: 60%;
@@ -349,7 +350,8 @@ footer a {
     white-space: nowrap;
     overflow-x: hidden;
 }
-.loop>img{
+
+.loop>img {
     height: 90%;
     margin: 6px;
     animation: anim 24s linear infinite;
@@ -365,23 +367,26 @@ footer a {
     }
 }
 
-.loop-info{
+.loop-info {
     justify-content: center;
     text-align: start;
     margin: 60px;
     animation: downToUp 0.8s;
     align-items: center;
 }
-.loop-info>h4{
+
+.loop-info>h4 {
     width: 90%;
     animation: downToUp 0.8s;
 }
-.provide{
+
+.provide {
     justify-content: center;
     align-self: center;
     margin-left: 30rem;
 }
-.provide-services>h3{
+
+.provide-services>h3 {
     padding-left: 60px
 }
 
@@ -428,7 +433,7 @@ footer a {
     box-shadow: 0px 4px 20px rgb(0, 0, 0, 0.5);
     transition: 0.3s;
     padding: 30px 50px;
-    background-color: #f1f1f1;
+    background-color: #fffefe;
 }
 
 .imgbox {
@@ -442,13 +447,8 @@ footer a {
 .imgbox img {
     width: 100%;
     height: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-
 }
 
-.imgbox_two img {
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
 
 .Interior-data {
     display: block;
@@ -507,12 +507,10 @@ footer a {
     margin-top: 2rem;
 }
 
-
-
-.imgbox_one img{
-    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+.imgbox_one img {
     height: 14rem;
 }
+
 /* ABOUT  */
 .info_about {
     display: flex;
@@ -529,6 +527,7 @@ footer a {
     font-weight: 900;
 
 }
+
 .our_team {
     display: flex;
     justify-content: center;
@@ -543,8 +542,16 @@ footer a {
     text-align: center;
 }
 
+.team-two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
 .company {
-    background: linear-gradient(to right, rgba(200, 203, 206, 0.776) 50%, rgba(255, 255, 255, 0.2) 50%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 50%, #f1f1f1 50%);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -552,15 +559,26 @@ footer a {
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-position: left;
     transition: 1s;
-    padding: 4vw;
+    padding: 2vw;
+    height: 10rem;
     background-size: 200%;
+}
+.Co-director>h2,p{
+    width: 8rem;
+}
+
+.head>h2{
+   width: 8rem;
+}
+.company>h2 {
+    font-size: 20px;
 }
 
 .company:hover {
     background-position: right;
 }
-.company h2{
-    text-shadow: 1px 1px 1px currentColor;
+.img_content>p{
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -606,7 +624,7 @@ footer a {
     .other-Home_hero {
         display: contents;
         justify-content: center;
-        text-align: center;   
+        text-align: center;
     }
 
     #line>h3 {
@@ -617,14 +635,16 @@ footer a {
         padding-top: 20%;
         font-size: 40px;
     }
-    .page{
+
+    .page {
         height: 38vh;
     }
+
     .info_ar>h1>span {
         font-size: 40px;
     }
 
-    
+
 
     .container-zero {
         display: flex;
@@ -633,7 +653,8 @@ footer a {
         text-align: start;
         flex-direction: column;
     }
-    .loop{
+
+    .loop {
         position: absolute;
         top: 24%;
         height: 40%;
@@ -642,22 +663,25 @@ footer a {
         white-space: nowrap;
         overflow-x: hidden;
     }
-    .loop-info{
+
+    .loop-info {
         margin-left: 30px;
         width: 80%;
         text-align: start;
         align-items: center;
     }
-    .loop-info>h4{
+
+    .loop-info>h4 {
         width: 100%;
     }
-   
-    .provide{
+
+    .provide {
         justify-content: center;
         align-self: center;
         margin-left: 2rem;
     }
-    .provide-services>h3{
+
+    .provide-services>h3 {
         padding-left: 10px
     }
 

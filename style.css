@@ -126,7 +126,7 @@ a:hover {
 }
 
 .carousel-caption {
-    background-color: rgb(51, 65, 85);
+    background-color: #3C315B;;
     color: white;
     margin-bottom: 50px;
 }
@@ -177,7 +177,7 @@ a:hover {
 }
 
 footer {
-    background-color: rgb(36, 43, 54);
+    background-color:  #3C315B;
     color: white;
     padding: 40px 40px;
     margin-top: 60px;
@@ -315,7 +315,7 @@ footer a {
     color: #3C315B;
 }
 
-.info_ar>h1>span {
+.info_ar>h1>span{
     font-size: 90px;
     color: #3C315B;
 }
@@ -563,7 +563,10 @@ footer a {
     height: 10rem;
     background-size: 200%;
 }
-.Co-director>h2,p{
+.Co-director>h2{
+    width: 8rem;
+}
+.Co-director>p{
     width: 8rem;
 }
 

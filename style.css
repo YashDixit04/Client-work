@@ -230,6 +230,7 @@ a:hover {
     z-index: 2;
 
 }
+
 .layout img:hover {
     scale: 1.1;
 }
@@ -469,14 +470,15 @@ a:hover {
 }
 
 /* ABOUT-Team */
-.info_about{
+.info_about {
     text-align: center;
     justify-content: center;
     display: flex;
     align-items: center;
 }
-.info_about>p{
-    width: 40%;   
+
+.info_about>p {
+    width: 40%;
 }
 
 .our_team {
@@ -579,6 +581,7 @@ a:hover {
     color: black;
     font-size: 20px;
 }
+
 .content {
     text-align: center;
     margin: 20px;
@@ -670,9 +673,11 @@ footer a {
     .info_ar>h1>span {
         font-size: 40px;
     }
-    .info_about>p{
-        width: 80%;   
+
+    .info_about>p {
+        width: 80%;
     }
+
     .container-zero {
         display: flex;
         justify-content: center;
@@ -754,6 +759,10 @@ footer a {
     }
 
     .touch-info {
+        flex-direction: column;
+    }
+
+    .team-two {
         flex-direction: column;
     }
 

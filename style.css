@@ -270,7 +270,6 @@ a:hover {
 
 .info_ar>h1>span {
     font-size: 90px;
-    color: #3C315B;
 }
 
 .info_ar span {
@@ -339,17 +338,38 @@ a:hover {
     margin-left: 30rem;
 }
 
+.fa-circle {
+    height: 6px;
+    margin-bottom: 2px;
+}
+
 .provide-services>h3 {
     padding-left: 60px
 }
-
+.provide-services>p{
+    padding-left: 60px
+}
+.card6{
+    background-image: url("images/Architecture/Architecture_last.jpeg");
+}
+.card7{
+    background-image: url("images/Architecture/Architecture-12.jpeg");
+}
+.card8{
+    background-image: url("images/Architecture/Architecture-eleven.jpeg");
+}
+.card9{
+    background-image: url("images/Architecture/Architecture-13.jpeg");
+}
+.card10{
+    background-image: url("images/Architecture/Architecture-ten.jpeg");
+}
 /* Interiors  */
 
 .Interiors_info {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin-top: 20px;
     margin-right: 40px;
 }
@@ -362,6 +382,19 @@ a:hover {
     width: 30rem;
     text-align: left;
     margin-left: 4rem;
+}
+
+.PPT button {
+    color: black;
+    background-color: rgb(248, 219, 73);
+    ;
+    border-radius: 20px;
+    width: 28rem;
+    height: 2.8rem;
+    border: none;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 30px;
 }
 
 .About_interiors-img img {
@@ -488,55 +521,58 @@ a:hover {
     margin-bottom: 2rem;
 }
 
-.team {
+/* About-Img  */
+.team-three {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
 
-.team-two {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    margin-top: 10px;
+.teamsImg {
+    width: 280px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
 }
 
-.company {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 50%, #f1f1f1 50%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-position: left;
-    transition: 1s;
-    padding: 2vw;
-    height: 10rem;
-    background-size: 200%;
+.card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 19px;
+    object-fit: cover;
+    background-size: cover;
+
 }
 
-.Co-director>p {
-    width: 8.4rem;
-    text-align: center;
-    padding-top: 20px;
+.team-info {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    backdrop-filter: blur(6px);
+    padding: 16rem 1rem 0rem 1rem;
+    border-radius: 20px;
 }
 
-.head>h2 {
-    width: 8rem;
+.team-info>h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.company>h2 {
+.team-info>p {
+    color: #facd60;
     font-size: 20px;
 }
 
-.director>p {
-    padding-top: 20px;
+.team-info>h5 {
+    font-size: 14px;
 }
 
-.company:hover {
-    background-position: right;
+.Director {
+    margin: 24px;
 }
 
 /* ABOUT-Content */
@@ -556,7 +592,6 @@ a:hover {
     justify-content: space-evenly;
     margin-top: 40px;
     align-items: center;
-
 }
 
 .location {
@@ -582,49 +617,6 @@ a:hover {
 .content {
     text-align: center;
     margin: 20px;
-}
-
-/* About-Img  */
-.team-three {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-}
-
-.teamsImg {
-    width: 280px;
-    height: 380px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px;
-}
-
-.card-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 19px;
-    object-fit: cover;
-    background-size: cover;
- 
-}
-.team-info{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    position: absolute;
-    backdrop-filter: blur(4px);
-    padding: 16rem 1rem 0rem 1rem;
-    border-radius: 20px;
-}
-
-.team-info>h2{
-    color: rgb(0, 0, 0);
-   
-}
-.team-info>p{
-    color: rgb(255, 153, 28);
 }
 
 /* Footer  */
@@ -707,7 +699,7 @@ footer a {
     }
 
     .page {
-        height: 38vh;
+        height: 30vh;
     }
 
     .info_ar>h1>span {
@@ -823,5 +815,24 @@ footer a {
     .director>p {
         width: 30vh;
         padding: 20px;
+    }
+
+    .team-three {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .teamsImg {
+        margin: 20px;
+    }
+
+    .PPT button {
+        width: 20rem;
+        height: 2.8rem;
+        border: none;
+        font-size: 20px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        margin-top: 30px;
     }
 }

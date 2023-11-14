@@ -30,17 +30,15 @@ body {
 
 h1,
 h2,
+h3,
+h4,
 h5,
-h6 {
+p,
+a {
     font-weight: bold;
     font-family: 'Italiana', sans-serif;
     color: black;
-
-}
-
-p,
-h4 {
-    color: black;
+    letter-spacing: 1px;
 }
 
 nav {
@@ -264,7 +262,6 @@ a:hover {
 
 .info_ar>h1 {
     font-size: 90px;
-    font-family: 'Italiana', sans-serif;
     color: #3C315B;
 }
 
@@ -346,24 +343,31 @@ a:hover {
 .provide-services>h3 {
     padding-left: 60px
 }
-.provide-services>p{
+
+.provide-services>p {
     padding-left: 60px
 }
-.card6{
+
+.card6 {
     background-image: url("images/Architecture/Architecture_last.jpeg");
 }
-.card7{
+
+.card7 {
     background-image: url("images/Architecture/Architecture-12.jpeg");
 }
-.card8{
+
+.card8 {
     background-image: url("images/Architecture/Architecture-eleven.jpeg");
 }
-.card9{
+
+.card9 {
     background-image: url("images/Architecture/Architecture-13.jpeg");
 }
-.card10{
+
+.card10 {
     background-image: url("images/Architecture/Architecture-ten.jpeg");
 }
+
 /* Interiors  */
 
 .Interiors_info {
@@ -559,7 +563,6 @@ a:hover {
 
 .team-info>h2 {
     color: rgb(0, 0, 0);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .team-info>p {
@@ -662,7 +665,8 @@ footer a {
     }
 
     #slider img {
-        height: 38rem;
+        margin-top: 6rem;
+        height: 24rem;
     }
 
     .layout img {
@@ -834,5 +838,9 @@ footer a {
         margin-left: 0px;
         margin-bottom: 20px;
         margin-top: 30px;
+    }
+
+    .team-info {
+        backdrop-filter: blur(6px);
     }
 }

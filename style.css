@@ -254,6 +254,8 @@ a:hover {
 }
 
 .info_ar {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -292,7 +294,6 @@ a:hover {
 
 .loop {
     position: absolute;
-    top: 30%;
     height: 60%;
     width: 100%;
     display: flex;
@@ -505,8 +506,6 @@ a:hover {
 .img_content>p {
     width: 100%;
 }
-
-/* ABOUT-Team */
 .info_about {
     text-align: center;
     justify-content: center;
@@ -514,8 +513,26 @@ a:hover {
     align-items: center;
 }
 
+
+/* ABOUT-Team */
+.about_section{
+    text-align: center;
+    padding-top: 8%;
+}
+
+.about_section span {
+    -webkit-text-stroke: 1.2px rgb(36, 43, 54);
+    color: transparent;
+}
+
 .info_about>p {
     width: 40%;
+}
+.about_section h1{
+    font-size: 70px;
+}
+.about_section>h1>span{
+    font-size: 70px;
 }
 
 .our_team {
@@ -645,7 +662,6 @@ footer a {
     color: white;
 }
 
-
 @media only screen and (max-width: 600px) {
     nav {
         width: 22rem;
@@ -696,18 +712,28 @@ footer a {
     #line>h3 {
         width: 300px;
     }
-
-    .info_ar h1 {
-        padding-top: 20%;
-        font-size: 40px;
+    .info_ar  {
+        padding-top: 30%;
+      
     }
-
+    .info_ar h1 {
+        font-size: 37px;
+    }
+    .about_section{
+        padding: 20vh 0vh 2vh 0vh;
+    }
+    .about_section h1{
+        font-size: 30px;
+    }
+    .about_section>h1>span{
+        font-size: 30px;
+    }
     .page {
         height: 30vh;
     }
 
     .info_ar>h1>span {
-        font-size: 40px;
+        font-size: 37px;
     }
 
     .info_about>p {
@@ -842,5 +868,26 @@ footer a {
 
     .team-info {
         backdrop-filter: blur(6px);
+        padding: 12rem 1rem 0rem 1rem;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    
+    nav {
+        width: 20rem;
+    }
+    .info_ar {
+        padding: 20vh 0vh 2vh 0vh;
+    }
+    .about_section{
+        padding: 20vh 0vh 2vh 0vh;
+    }
+    .about_section h1{
+        font-size: 30px;
+    }
+    .about_section>h1>span{
+        font-size: 30px;
     }
 }

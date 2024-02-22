@@ -58,7 +58,7 @@ h2 {
 }
 
 h3 {
-    color: var(--Title-Color-Title-Color, #2F2D53);
+    color: var(--Title-Color-Title-Color, #272643);
     font-family: Syne;
     font-size: 32px;
     font-style: normal;
@@ -258,14 +258,6 @@ a:hover {
     display: none;
 }
 
-#top-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: rgb(237, 199, 9);
-    cursor: pointer;
-}
-
 .layout {
     display: flex;
     gap: 44px;
@@ -311,7 +303,6 @@ a:hover {
 .our_work h1 {
     margin: 20px;
     z-index: 2;
-
 }
 
 .layout img:hover {
@@ -345,16 +336,15 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 8%;
+    padding-top: 10%;
+    word-spacing: 10px;
 }
 
-.info_ar>h1 {
-    font-size: 90px;
-    color: #3C315B;
+.info_ar>h2 {
+    font-size: 58px;
 }
-
-.info_ar>h1>span {
-    font-size: 90px;
+.info_ar>h2>span {
+    font-size: 58px;
 }
 
 .info_ar span {
@@ -411,8 +401,11 @@ a:hover {
     align-items: center;
 }
 
-.loop-info>h4 {
+.loop-info>p {
     width: 90%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
     animation: downToUp 0.8s;
 }
 
@@ -426,12 +419,12 @@ a:hover {
     height: 6px;
     margin-bottom: 2px;
 }
-
-.provide-services>h3 {
-    padding-left: 60px
+.provide-services>h4 {
+    padding-left: 40px
 }
 
 .provide-services>p {
+    /* font-size: 18px; */
     padding-left: 60px
 }
 
@@ -469,8 +462,11 @@ a:hover {
     width: 60%;
 }
 
-.About_interiors h4 {
+.About_interiors p {
     width: 30rem;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
     text-align: left;
     margin-left: 4rem;
 }
@@ -478,7 +474,6 @@ a:hover {
 .PPT button {
     color: black;
     background-color: rgb(248, 219, 73);
-    ;
     border-radius: 20px;
     width: 28rem;
     height: 2.8rem;
@@ -729,7 +724,7 @@ a:hover {
     display: flex;
 }
 
-.location>h5 {
+.location>a>h5 {
     font-size: 20px;
 }
 
@@ -965,7 +960,7 @@ footer a {
 
 @media only screen and (max-width: 600px) {
     nav {
-        width: max-content;
+        width: 360px;
     }
 
     nav span {
@@ -1033,7 +1028,7 @@ footer a {
 
     }
 
-    .info_ar h1 {
+    .info_ar h2 {
         font-size: 37px;
     }
 
@@ -1053,7 +1048,7 @@ footer a {
         height: 18vh;
     }
 
-    .info_ar>h1>span {
+    .info_ar>h2>span {
         font-size: 37px;
     }
 
@@ -1080,10 +1075,9 @@ footer a {
     }
 
     .loop-info {
-        margin-left: 30px;
-        width: 80%;
+        margin: 100px 0px 0px 20px;
+        width: 100%;
         text-align: start;
-        align-items: center;
     }
 
     .loop-info>h4 {
@@ -1096,7 +1090,7 @@ footer a {
         margin-left: 2rem;
     }
 
-    .provide-services>h3 {
+    .provide-services>h4 {
         padding-left: 10px
     }
 
@@ -1104,7 +1098,7 @@ footer a {
         width: 90%;
     }
 
-    .About_interiors h4 {
+    .About_interiors p {
         width: 22rem;
         text-align: left;
         margin-left: 0rem;
@@ -1206,7 +1200,7 @@ footer a {
 
     nav {
         width: 360px;
-        margin: 10px 0px 0px 10px;
+        margin: 10px 0px 0px 8px;
     }
 
     .info_ar {
@@ -1256,6 +1250,9 @@ footer a {
 }
 
 @media screen and (max-width: 370px) {
+    nav{
+        width: 320px;
+    }
     .slider-container {
         margin: 0.94rem;
     }
